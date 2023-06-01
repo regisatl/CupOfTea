@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Intégration de la meta description avec le content -->
+    <meta name="description"
+        content="Cup of Tea est le salon de Thé de tout genre avec un goût jamais connu dans votre vie. Venez et découvrez nos recettes...">
+
+    <!-- Intégration de la favicon du site -->
+    <link rel="shortcut icon" href="./img/title.png" type="image/png">
+
+    <!-- Intégration du lien des fontawesomes -->
+    <script src="https://kit.fontawesome.com/79fa04224e.js" crossorigin="anonymous"></script>
+
+    <!-- Intégration du lien du framework bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <title>Cup Of Tea / Home</title>
+</head>
+
+<body>
+    <!-- header start -->
+    <header class="header p-2 text-white" style="background-image: url('./img/bg.jpg');">
+        <div class="container">
+            <div>
+                <p class="text-center">Livraison offerte à partir de 65€ d'achat!</p>
+                <div class="d-flex justify-content-between modal-header">
+                    <a href="#">
+                        <img src="./img/logo.png" alt="Logo de Cup of Tea">
+                    </a>
+                    <p>Mon panier <span class="border p-1"><i class="fa fa-shopping-cart"></i></span> <span class="fw-bold">42,00€</span></p>
+                </div>
+                <nav class="navbar-nav navbar-expand-sm pt-5">
+                    <ul class="p-0 d-flex justify-content-between text-white">
+                        <li class="list-unstyled nav-item">
+                            <a class="fw-bold link-offset-2 link-underline link-underline-opacity-0 nav-link  text-uppercase text-white"
+                                href="#">Thés
+                            </a>
+                        </li>
+                        <li class="list-unstyled nav-item">
+                            <a class="fw-bold link-offset-2 link-underline link-underline-opacity-0 nav-link  text-uppercase text-white" href="#">Grands Crus</a>
+                        </li>
+                        <li class="list-unstyled nav-item">
+                            <a class="fw-bold link-offset-2 link-underline link-underline-opacity-0 nav-link  text-uppercase text-white" href="#">Assessoires</a>
+                        </li>
+                        <li class="list-unstyled nav-item">
+                            <a class="fw-bold link-offset-2 link-underline link-underline-opacity-0 nav-link  text-uppercase text-white" href="#">Epicerie</a>
+                        </li>
+                        <li class="list-unstyled nav-item">
+                            <a class="fw-bold link-offset-2 link-underline link-underline-opacity-0 nav-link  text-uppercase text-white" href="#">Notre histoire</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main class="main">
+
+        <!-- article start -->
+        <article class="container mb-2">
+            <h1>C'est noël, profitez-en !</h1>
+            <img src="./img/offre-noel.jpg" alt="Image offre noel" class="d-block" style="max-width:100%">
+            <p>Pour toute commande effectuée avant le 20 décembre.</p>
+        </article>
+        <!-- article end -->
+
+        <!-- div carousel start -->
+        <div class="container">
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                </div>
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/slider/1.jpg" alt="Image slider 1" class="d-block" style="max-width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/slider/2.jpg" alt="Image slider 2" class="d-block" style="max-width:100%">
+                    </div>
+                </div>
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+
+        <article class="container mb-2">
+            <h2>Choississez votre thé</h2>
+            <div class="d-flex justify-content-between">
+                <div><img src="./img/tea/1.jpg" alt="Images Tea"></div>
+                <div><img src="./img/tea/2.jpg" alt="Images Tea"></div>
+                <div><img src="./img/tea/3.jpg" alt="Images Tea"></div>
+                <div><img src="./img/tea/4.jpg" alt="Images Tea"></div>
+                <div><img src="./img/tea/5.jpg" alt="Images Tea"></div>
+            </div>
+        </article>
+
+        <div class="container d-flex justify-content-between">
+            <section>
+                <h3>Notre nouveauté</h3>
+                <div>
+                    <img src="./img/concept/1.svg" alt="Image SVG">
+                </div>
+                <div>
+                    <h4>Thé du hammam</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem alias ratione maxime animi, at
+                        fugiat molestias ad dolore esse voluptatum corporis ab in vel natus voluptatibus, fugit
+                        doloribus dolor tempore.</p>
+                    <p>A partir de <strong>8,50€</strong></p>
+                </div>
+                <div>
+                    <a href="#">VOIR CE PRODUIT</a>
+                </div>
+            </section>
+
+            <section>
+                <h3>Notre best-selier</h3>
+                <div>
+                    <img src="./img/concept/2.svg" alt="Image SVG">
+                </div>
+                <div>
+                    <h4>Infusion Herboriste</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem alias ratione maxime animi, at
+                        fugiat molestias ad dolore esse voluptatum corporis ab in vel natus voluptatibus, fugit
+                        doloribus dolor tempore.</p>
+                    <p>A partir de <strong>7,60€</strong></p>
+                </div>
+                <div>
+                    <a href="#">VOIR CE PRODUIT</a>
+                </div>
+            </section>
+
+            <section>
+                <h3>Notre coup de coeur</h3>
+                <div>
+                    <img src="./img/concept/1.svg" alt="Image SVG">
+                </div>
+                <div>
+                    <h4>Blue of London</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem alias ratione maxime animi, at
+                        fugiat molestias ad dolore esse voluptatum corporis ab in vel natus voluptatibus, fugit
+                        doloribus dolor tempore.</p>
+                    <p>A partir de <strong>9,00€</strong></p>
+                </div>
+                <div>
+                    <a href="#">VOIR CE PRODUIT</a>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <!-- main end -->
+
+    <!-- footer start -->
+    <footer class="footer text-white pt-3" style="background-image: url('./img/bg.jpg');">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div><i class="fa fa-lock fa-2x"></i>Paiment Sécurisé</div>
+                <div><i class="fa fa-truck fa-2x"></i>Ma livraison offerte</div>
+                <div><i class="fa fa-id-card-o fa-2x"></i>Carte de fidélité</div>
+                <div><i class="fa fa-phone fa-2x"></i>Service Client</div>
+                <div><i class="fas fa-check-circle fa-2x"></i>Garantie qualité</div>
+            </div>
+            <div class="d-flex justify-content-between mb-2">
+                <section class="mb-5">
+                    <h3>Cup of Tea</h3>
+                    <ul>
+                        <li><a href="#">Notre histoire</a></li>
+                        <li><a href="#">Nos boutiques</a></li>
+                        <li><a href="#">Le Thé de A à Z</a></li>
+                        <li><a href="#">Espace clients professionnels</a></li>
+                        <li><a href="#">Recrutement</a></li>
+                        <li><a href="#">Contact-nous!</a></li>
+                        <li><a href="#">L'Ecole du Thé</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Commandez en ligne</h3>
+                    <ul>
+                        <li><a href="#">Première visite</a></li>
+                        <li><a href="#">Aide - FAQ</a></li>
+                        <li><a href="#">Le Thé de A à Z</a></li>
+                        <li><a href="#">Service client</a></li>
+                        <li><a href="#">Suivre ma commande</a></li>
+                        <li><a href="#">Conditions générales de vente</a></li>
+                        <li><a href="#">Informations légales</a></li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Suivez-nous!</h3>
+                    <ul>
+                        <li><a href="#">Notre histoire</a></li>
+                        <li><a href="#">Nos boutiques</a></li>
+                        <li><a href="#">Le Thé de A à Z</a></li>
+                        <li><a href="#">Espace clients professionnels</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="text-center">
+                <p><a class="text-white" href="#"><img src="./img/logo-3wa.png" alt="Propriété de la 3W Academy"></a>
+                </p>
+                <p rel="licence">Cet exercice de <a href="https://3WA.fr">3W Academy</a> est mis à disposition <a
+                        href="#">pour l'usage personnel des
+                        étudiants. Pas de Rediffusion - Attribution - Pas d'utilisation Commerciale - Pas de
+                        modification -
+                        International</a>. Les autorisations au-delà du champ de cette licence peuvent être obtenus
+                    auprès
+                    de <a class="text-white" href="mailto:contact@3wa.fr">contact@3wa.fr</a>. Les maquettes ont été réalisés par <a
+                        href="#">Catherine Denos</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+</body>
+
+</html>
