@@ -1,0 +1,43 @@
+@import "../bootstrap/scss/bootstrap.scss";
+
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+header.header {
+    background-image: url("../img/bg.jpg");
+
+    p.text {
+        padding: 0.5rem;
+    }
+}
+
+
+article h2 {
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+article.thea,
+div.thea {
+    background-color: #fff;
+}
+
+figcaption {
+    font-weight: 600;
+}
+
+footer.footer {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    p a img {
+        width: 50px;
+    }
+
+}

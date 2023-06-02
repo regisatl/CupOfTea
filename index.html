@@ -17,9 +17,7 @@
     <script src="https://kit.fontawesome.com/79fa04224e.js" crossorigin="anonymous"></script>
 
     <!-- Intégration du lien du framework bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="./css/custom.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <title>Cup Of Tea / Home</title>
@@ -27,15 +25,15 @@
 
 <body>
     <!-- header start -->
-    <header class="header p-2 text-white" style="background-image: url('./img/bg.jpg');">
+    <header class="header text-white">
+        <p class="bg-glight p-2 text-center">Livraison offerte à partir de 65€ d'achat!</p>
         <div class="container">
             <div>
-                <p class="text-center">Livraison offerte à partir de 65€ d'achat!</p>
                 <div class="d-flex justify-content-between modal-header">
                     <a href="#">
                         <img class="img-fluid" src="./img/logo.png" alt="Logo de Cup of Tea">
                     </a>
-                    <p>Mon panier <span class="border border-opacity-10 rounded-circle p-1"><i
+                    <p>Mon panier <span class="border border-opacity-10 rounded-circle p-2"><i
                                 class="fa fa-shopping-cart"></i></span> <span class="fw-bold">42,00€</span></p>
                 </div>
                 <nav class="navbar-nav navbar-expand-sm pt-5">
@@ -72,11 +70,10 @@
     <main class="main">
 
         <!-- article start -->
-        <article class="container mb-2">
-            <h1 class="text-center my-3">C'est noël, profitez-en !</h1>
-            <img class="img-fluid" src="./img/offre-noel.jpg" alt="Image offre noel" class="d-block"
-                style="max-width:100%">
-            <p class="text-center my-2">Pour toute commande effectuée avant le 20 décembre.</p>
+        <article class="ImgNoel container mb-2">
+            <h1 class="text-center text-gpale fw-bold my-4">C'est noël, profitez-en !</h1>
+            <img src="./img/offre-noel.jpg" alt="Image offre noel" class="img-fluid rounded d-block">
+            <p class="text-center fw-bold my-3">Pour toute commande effectuée avant le 20 décembre.</p>
         </article>
         <!-- article end -->
 
@@ -84,21 +81,18 @@
         <div id="carouselExampleIndicators" class="container carousel slide">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
+                    aria-current="true" aria-label="Slide 1">
+                </button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
+                    aria-label="Slide 2">
+                </button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./img/slider/1.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/slider/1.jpg" class="img-fluid rounded d-block w-100" alt="Images Slide">
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/slider/2.jpg" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/slider/1.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/slider/2.jpg" class="img-fluid rounded d-block w-100" alt="Images Slide">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -113,66 +107,87 @@
             </button>
         </div>
 
-        <article class="container my-5">
-            <h2 class="text-center">Choississez votre thé</h2>
+        <article class="thea rounded container py-3 my-5">
+            <h2 class="text-center text-gpale py-3">Choississez votre thé</h2>
             <div class="d-flex justify-content-between">
-                <div><img class="img-fluid" src="./img/tea/1.jpg" alt="Images Tea"></div>
-                <div><img class="img-fluid" src="./img/tea/2.jpg" alt="Images Tea"></div>
-                <div><img class="img-fluid" src="./img/tea/3.jpg" alt="Images Tea"></div>
-                <div><img class="img-fluid" src="./img/tea/4.jpg" alt="Images Tea"></div>
-                <div><img class="img-fluid" src="./img/tea/5.jpg" alt="Images Tea"></div>
+                <figure class="text-center">
+                    <img class="img-fluid" src="./img/tea/1.jpg" alt="Images Tea">
+                    <figcaption>Thé noir</figcaption>
+                </figure>
+                <figure class="text-center">
+                    <img class="img-fluid" src="./img/tea/2.jpg" alt="Images Tea">
+                    <figcaption>Thé vert</figcaption>
+                </figure>
+                <figure class="text-center">
+                    <img class="img-fluid" src="./img/tea/3.jpg" alt="Images Tea">
+                    <figcaption>Oolong</figcaption>
+                </figure>
+                <figure class="text-center">
+                    <img class="img-fluid" src="./img/tea/4.jpg" alt="Images Tea">
+                    <figcaption>Thé blanc</figcaption>
+                </figure>
+                <figure class="text-center">
+                    <img class="img-fluid" src="./img/tea/5.jpg" alt="Images Tea">
+                    <figcaption>Rooibos</figcaption>
+                </figure>
             </div>
         </article>
 
-        <div class="container d-flex justify-content-between row-gap-3">
-            <section class="text-center my-5">
-                <h3>Notre nouveauté</h3>
+        <div class="thea rounded container my-5 d-flex justify-content-between row-gap-3">
+            <section class="text-center p-2 my-5">
+                <h3 class="text-gpale">Notre nouveauté</h3>
                 <div>
-                    <img class="img-fluid" src="./img/concept/1.svg" alt="Image SVG">
+                    <img class="img-fluid" src="./img/product/product1.jpg" alt="Image SVG">
                 </div>
-                <div>
+                <div class="my-3">
                     <h4>Thé du hammam</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem alias ratione maxime animi, at
+                    <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem alias ratione maxime
+                        animi, at
                         fugiat molestias ad dolore esse voluptatum corporis ab in vel natus voluptatibus, fugit
                         doloribus dolor tempore.</p>
                     <p>A partir de <strong>8,50€</strong></p>
                 </div>
-                <div>
-                    <a href="#">VOIR CE PRODUIT</a>
+                <div class="my-3">
+                    <a class="link-offset-2 link-underline link-underline-opacity-0 text-white btn btn-marron p-3 fw-bold"
+                        href="#">VOIR CE PRODUIT</a>
                 </div>
             </section>
 
-            <section class="text-center my-5">
-                <h3>Notre best-selier</h3>
+            <section class="text-center p-2 my-5">
+                <h3 class="text-gpale">Notre best-selier</h3>
                 <div>
-                    <img class="img-fluid" src="./img/concept/2.svg" alt="Image SVG">
+                    <img class="img-fluid" src="./img/product/product2.jpg" alt="Image SVG">
                 </div>
-                <div>
+                <div class="my-3">
                     <h4>Infusion Herboriste</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem alias ratione maxime animi, at
+                    <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem alias ratione maxime
+                        animi, at
                         fugiat molestias ad dolore esse voluptatum corporis ab in vel natus voluptatibus, fugit
                         doloribus dolor tempore.</p>
                     <p>A partir de <strong>7,60€</strong></p>
                 </div>
-                <div>
-                    <a href="#">VOIR CE PRODUIT</a>
+                <div class="my-3">
+                    <a class="link-offset-2 link-underline link-underline-opacity-0 text-white btn btn-marron p-3 fw-bold"
+                        href="#">VOIR CE PRODUIT</a>
                 </div>
             </section>
 
-            <section class="text-center my-5">
-                <h3>Notre coup de coeur</h3>
+            <section class="text-center p-2 my-5">
+                <h3 class="text-gpale">Notre coup de coeur</h3>
                 <div>
-                    <img class="img-fluid" src="./img/concept/1.svg" alt="Image SVG">
+                    <img class="img-fluid" src="./img/product/product3.jpg" alt="Image SVG">
                 </div>
-                <div>
+                <div class="my-3">
                     <h4>Blue of London</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem alias ratione maxime animi, at
+                    <p class="my-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem alias ratione maxime
+                        animi, at
                         fugiat molestias ad dolore esse voluptatum corporis ab in vel natus voluptatibus, fugit
                         doloribus dolor tempore.</p>
                     <p>A partir de <strong>9,00€</strong></p>
                 </div>
                 <div>
-                    <a href="#">VOIR CE PRODUIT</a>
+                    <a class="link-offset-2 link-underline link-underline-opacity-0 text-white btn btn-marron p-3 fw-bold"
+                        href="#">VOIR CE PRODUIT</a>
                 </div>
             </section>
         </div>
@@ -181,97 +196,137 @@
     <!-- main end -->
 
     <!-- footer start -->
-    <footer class="footer text-white p-3" style="background-image: url('./img/bg.jpg');">
-        <div class="container">
-            <div class="d-flex justify-content-between p-3">
-                <div class="text-center fw-bold"><i class="fa fa-lock fa-2x"></i> <br> Paiment Sécurisé</div>
-                <div class="text-center fw-bold"><i class="fa fa-truck fa-2x"></i> <br> Ma livraison offerte</div>
-                <div class="text-center fw-bold"><i class="fa fa-id-card-o fa-2x"></i> <br> Carte de fidélité</div>
-                <div class="text-center fw-bold"><i class="fa fa-phone fa-2x"></i> <br> Service Client</div>
-                <div class="text-center fw-bold"><i class="fas fa-check-circle fa-2x"></i> <br> Garantie qualité</div>
+    <footer class="footer text-white p-0">
+        <div class="icons bg-glight p-3">
+            <div class="container d-flex justify-content-between ">
+                <div class="text-center fw-bold">
+                    <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#"><i
+                            class="fa fa-lock fa-2x"></i> <br> Paiment Sécurisé</a>
+                </div>
+                <div class="text-center fw-bold">
+                    <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#"><i
+                            class="fa fa-truck fa-2x"></i> <br> Ma livraison offerte</a>
+                </div>
+                <div class="text-center fw-bold">
+                    <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#"><i
+                            class="fa fa-id-card-o fa-2x"></i> <br> Carte de fidélité</a>
+                </div>
+                <div class="text-center fw-bold">
+                    <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#"><i
+                            class="fa fa-phone fa-2x"></i> <br> Service Client</a>
+                </div>
+                <div class="text-center fw-bold">
+                    <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#"><i
+                            class="fas fa-check-circle fa-2x"></i> <br> Garantie qualité</a>
+                </div>
             </div>
+        </div>
+        <div class="container">
             <div class="d-flex justify-content-between my-5 ">
                 <section class="text-center">
                     <h3 class="fw-bold">Cup of Tea</h3>
-                    <ul class="p-0">
-                        <li class="list-unstyled"><a
-                                class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Notre
-                                histoire</a></li>
-                        <li class="list-unstyled"><a
-                                class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Nos
-                                boutiques</a></li>
-                        <li class="list-unstyled"><a
-                                class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Le Thé
-                                de A à Z</a></li>
-                        <li class="list-unstyled"><a
-                                class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Espace
-                                clients professionnels</a></li>
-                        <li class="list-unstyled"><a
-                                class="link-offset-2 link-underline link-underline-opacity-0 text-white"
-                                href="#">Recrutement</a></li>
-                        <li class="list-unstyled"><a
-                                class="link-offset-2 link-underline link-underline-opacity-0 text-white"
-                                href="#">Contact-nous!</a></li>
-                        <li class="list-unstyled"><a
-                                class="link-offset-2 link-underline link-underline-opacity-0 text-white"
-                                href="#">L'Ecole du Thé</a></li>
+                    <ul class="list-unstyled p-0">
+                        <li>
+                            <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Notre
+                                histoire</a>
+                        </li>
+                        <li>
+                            <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Nos
+                                boutiques</a>
+                        </li>
+                        <li>
+                            <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Le Thé
+                                de A à Z</a>
+                        </li>
+                        <li>
+                            <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Espace
+                                clients professionnels</a>
+                        </li>
+                        <li>
+                            <a class="link-offset-2 link-underline link-underline-opacity-0 text-white"
+                                href="#">Recrutement</a>
+                        </li>
+                        <li>
+                            <a class="link-offset-2 link-underline link-underline-opacity-0 text-white"
+                                href="#">Contact-nous!</a>
+                        </li>
+                        <li>
+                            <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">L'Ecole
+                                du Thé</a>
+                        </li>
                     </ul>
                 </section>
                 <section class="text-center">
                     <h3>Commandez en ligne</h3>
-                    <ul>
-                        <li class="list-unstyled"><a
-                                class="link-offset-2 link-underline link-underline-opacity-0 text-white"
-                                href="#">Première visite</a></li>
-                        <li class="list-unstyled"><a
-                                class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Aide -
-                                FAQ</a></li>
-                        <li class="list-unstyled"><a
-                                class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Le Thé
-                                de A à Z</a></li>
-                        <li class="list-unstyled"><a
-                                class="link-offset-2 link-underline link-underline-opacity-0 text-white"
-                                href="#">Service client</a></li>
-                        <li class="list-unstyled"><a
-                                class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Suivre
-                                ma commande</a></li>
-                        <li class="list-unstyled"><a
-                                class="link-offset-2 link-underline link-underline-opacity-0 text-white"
-                                href="#">Conditions générales de vente</a></li>
-                        <li class="list-unstyled"><a
-                                class="link-offset-2 link-underline link-underline-opacity-0 text-white"
-                                href="#">Informations légales</a></li>
+                    <ul class="p-0 list-unstyled">
+                        <li>
+                            <a class="link-offset-2 link-underline link-underline-opacity-0 text-white"
+                                href="#">Première visite</a>
+                        </li>
+                        <li>
+                            <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Aide -
+                                FAQ</a>
+                        </li>
+                        <li>
+                            <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Le Thé
+                                de A à Z</a>
+                        </li>
+                        <li>
+                            <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Service
+                                client</a>
+                        </li>
+                        <li>
+                            <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Suivre
+                                ma commande</a>
+                        </li>
+                        <li>
+                            <a class="link-offset-2 link-underline link-underline-opacity-0 text-white"
+                                href="#">Conditions générales de vente</a>
+                        </li>
+                        <li>
+                            <a class="link-offset-2 link-underline link-underline-opacity-0 text-white"
+                                href="#">Informations légales</a>
+                        </li>
                     </ul>
                 </section>
                 <section class="mb-5 text-center">
                     <h3>Suivez-nous!</h3>
-                    <ul>
-                        <li class="list-unstyled"><a
-                                class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Notre
-                                histoire</a></li>
-                        <li class="list-unstyled"><a
-                                class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Nos
-                                boutiques</a></li>
-                        <li class="list-unstyled"><a
-                                class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Le Thé
-                                de A à Z</a></li>
-                        <li class="list-unstyled"><a
-                                class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Espace
-                                clients professionnels</a></li>
+                    <ul class="p-0 list-unstyled">
+                        <li>
+                            <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Notre
+                                histoire</a>
+                        </li>
+                        <li>
+                            <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Nos
+                                boutiques</a>
+                        </li>
+                        <li>
+                            <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Le Thé
+                                de A à Z</a>
+                        </li>
+                        <li>
+                            <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Espace
+                                clients professionnels</a>
+                        </li>
                     </ul>
                 </section>
             </div>
-            <div class="text-center">
-                <p><a class="text-white" href="#"><img src="./img/logo-3wa.png" alt="Propriété de la 3W Academy"></a>
+        </div>
+        <div class="license bg-glight py-3 text-center">
+            <div class="container">
+                <p><a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#"><img
+                            src="./img/logo-3wa.png" alt="Propriété de la 3W Academy"></a>
                 </p>
-                <p rel="licence">Cet exercice de <a href="https://3WA.fr">3W Academy</a> est mis à disposition <a
-                        href="#">pour l'usage personnel des
+                <p rel="licence">Cet exercice de <a
+                        class="link-offset-2 link-underline link-underline-opacity-0 text-white fw-bold"
+                        href="https://3WA.fr">3W Academy</a> est mis à disposition
+                    <a class="link-offset-2 link-underline link-underline-opacity-0 text-white fw-bold" href="#">pour l'usage personnel des
                         étudiants. Pas de Rediffusion - Attribution - Pas d'utilisation Commerciale - Pas de
                         modification -
                         International</a>. Les autorisations au-delà du champ de cette licence peuvent être obtenus
                     auprès
-                    de <a class="text-white" href="mailto:contact@3wa.fr">contact@3wa.fr</a>. Les maquettes ont été
-                    réalisés par <a href="#">Catherine Denos</a>
+                    de <a class="link-offset-2 link-underline link-underline-opacity-0 text-white fw-bold" href="mailto:contact@3wa.fr">contact@3wa.fr</a>. Les maquettes ont été
+                    réalisés par <a class="link-offset-2 link-underline link-underline-opacity-0 text-white fw-bold" href="#">Catherine Denos</a>
                 </p>
             </div>
         </div>
