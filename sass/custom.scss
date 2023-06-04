@@ -1,10 +1,6 @@
 @import "../bootstrap/scss/bootstrap.scss";
 
-
-header.header {
-    background-image: url("../img/bg.jpg");
-}
-
+header.header,
 footer.footer {
     background-image: url("../img/bg.jpg");
     background-repeat: no-repeat;
