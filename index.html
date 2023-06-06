@@ -31,45 +31,56 @@
 <body class="bg-backwhite m-0">
 
     <!-- header start -->
-    <header class="header text-white">
+    <header class="header text-white clearfix">
         <img class="img-fluid float-sm-end" src="./img/ribbon.svg" alt="Ribbon SVG" style="width: 10%;">
         <p class="bg-glight p-2 text-center">Livraison offerte à partir de 65€ d'achat!</p>
+
+        <!-- navbar start -->
         <div class="container">
-            <div>
-                <div class="d-flex justify-content-between modal-header">
-                    <a href="#">
-                        <img class="img-fluid" src="./img/logo.png" alt="Logo de Cup of Tea">
+            <nav class="navbar-nav navbar-expand-sm pt-5">
+                <div class="d-flex justify-content-between align-items-center modal-header">
+                    <a class="navbar-brand" href="#">
+                        <img class="img-fluid align-middle" src="./img/logo.png" alt="Logo de Cup of Tea">
                     </a>
-                    <p>Mon panier <span class="border border-opacity-100 rounded-circle p-2"><i
-                                class="fa fa-shopping-cart"></i></span> <span class="fw-bold">42,00€</span></p>
+                    <p class="fw-bold">Mon panier <span class="border border-opacity-100 rounded-circle p-2"><i
+                                class="fa fa-shopping-cart"></i></span>42,00€</p>
                 </div>
-                <nav class="navbar-nav navbar-expand-sm pt-5">
-                    <ul class="list-unstyled p-0 d-flex justify-content-between text-white">
-                        <li class="nav-item">
-                            <a class="d-block  fw-bold link-offset-2 link-underline link-underline-opacity-0 nav-link  text-uppercase text-white"
-                                href="#">Thés
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="d-block fw-bold link-offset-2 link-underline link-underline-opacity-0 nav-link  text-uppercase text-white"
-                                href="#">Grands Crus</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="d-block fw-bold link-offset-2 link-underline link-underline-opacity-0 nav-link  text-uppercase text-white"
-                                href="#">Assessoires</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="d-block fw-bold link-offset-2 link-underline link-underline-opacity-0 nav-link  text-uppercase text-white"
-                                href="#">Epicerie</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="d-block fw-bold link-offset-2 link-underline link-underline-opacity-0 nav-link  text-uppercase text-white"
-                                href="./about/">Notre histoire</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <div class="text-white">
+                        <ul class="list-unstyled p-0 d-flex justify-content-between text-white">
+                            <li class="nav-item">
+                                <a class="d-block fw-bold link-offset-2 link-underline link-underline-opacity-0 nav-link  text-uppercase text-white"
+                                    href="#">Thés
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="d-block fw-bold link-offset-2 link-underline link-underline-opacity-0 nav-link  text-uppercase text-white"
+                                    href="#">Grands Crus</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="d-block fw-bold link-offset-2 link-underline link-underline-opacity-0 nav-link  text-uppercase text-white"
+                                    href="#">Assessoires</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="d-block fw-bold link-offset-2 link-underline link-underline-opacity-0 nav-link  text-uppercase text-white"
+                                    href="#">Epicerie</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="d-block fw-bold link-offset-2 link-underline link-underline-opacity-0 nav-link  text-uppercase text-white"
+                                    href="./about/">Notre histoire</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
+        </nav>
+        <!-- navbar end -->
+
     </header>
     <!-- header end -->
 
@@ -118,24 +129,24 @@
         <!-- article Thé start -->
         <article class="bg-white rounded container py-3 my-5">
             <h2 class="text-center text-gpale py-3 fw-bold">Choississez votre thé</h2>
-            <div class="d-flex justify-content-between">
-                <figure class="text-center">
+            <div class="row justify-content-center">
+                <figure class="col-lg-2 col-md-6 text-center">
                     <img class="img-fluid" src="./img/tea/1.jpg" alt="Images Tea">
                     <figcaption>Thé noir</figcaption>
                 </figure>
-                <figure class="text-center">
+                <figure class="col-lg-2 col-md-6 text-center">
                     <img class="img-fluid" src="./img/tea/2.jpg" alt="Images Tea">
                     <figcaption>Thé vert</figcaption>
                 </figure>
-                <figure class="text-center">
+                <figure class="col-lg-2 col-md-6 text-center">
                     <img class="img-fluid" src="./img/tea/3.jpg" alt="Images Tea">
                     <figcaption>Oolong</figcaption>
                 </figure>
-                <figure class="text-center">
+                <figure class="col-lg-2 col-md-6 text-center">
                     <img class="img-fluid" src="./img/tea/4.jpg" alt="Images Tea">
                     <figcaption>Thé blanc</figcaption>
                 </figure>
-                <figure class="text-center">
+                <figure class="col-lg-2 col-md-6 text-center">
                     <img class="img-fluid" src="./img/tea/5.jpg" alt="Images Tea">
                     <figcaption>Rooibos</figcaption>
                 </figure>
@@ -144,8 +155,8 @@
         <!-- article Thé end -->
 
         <!-- div nouveauté start -->
-        <div class="bg-white rounded container my-5 row m-auto row-gap-3">
-            <section class="col-4 text-center p-2 my-5">
+        <div class="bg-white rounded container justify-content-center my-5 row m-auto">
+            <section class="col-lg-4 col-md-8 text-center p-2 my-5">
                 <h3 class="text-gpale fw-bold">Notre nouveauté</h3>
                 <div>
                     <img class="img-fluid" src="./img/product/product1.jpg" alt="Image SVG">
@@ -164,7 +175,7 @@
                 </div>
             </section>
 
-            <section class="col-4 text-center p-2 my-5">
+            <section class="col-lg-4 col-md-8 text-center p-2 my-5">
                 <h3 class="text-gpale fw-bold">Notre best-selier</h3>
                 <div>
                     <img class="img-fluid" src="./img/product/product2.jpg" alt="Image SVG">
@@ -183,7 +194,7 @@
                 </div>
             </section>
 
-            <section class="col-4 text-center p-2 my-5">
+            <section class="col-lg-4 col-md-8 text-center p-2 my-5">
                 <h3 class="text-gpale fw-bold">Notre coup de coeur</h3>
                 <div>
                     <img class="img-fluid" src="./img/product/product3.jpg" alt="Image SVG">
@@ -209,34 +220,34 @@
 
     <!-- footer start -->
     <footer class="footer text-white p-0">
-        <div class="icons bg-glight p-3">
-            <div class="container d-flex justify-content-between ">
-                <div class="text-center fw-bold">
+        <div class="icons bg-glight my-3">
+            <div class="container row m-auto gx-5 gy-3 justify-content-center">
+                <div class="col-lg-2 col-md-6 text-center fw-bold">
                     <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#"><i
-                            class="fa fa-lock fa-2x"></i> <br> Paiment Sécurisé</a>
+                            class="fa fa-lock fa-2x"></i><br> Paiment Sécurisé</a>
                 </div>
-                <div class="text-center fw-bold">
+                <div class="col-lg-2 col-md-6 text-center fw-bold">
                     <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#"><i
-                            class="fa fa-truck fa-2x"></i> <br> Ma livraison offerte</a>
+                            class="fa fa-truck fa-2x"></i><br> Ma livraison offerte</a>
                 </div>
-                <div class="text-center fw-bold">
+                <div class="col-lg-2 col-md-6 text-center fw-bold">
                     <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#"><i
-                            class="fa fa-id-card-o fa-2x"></i> <br> Carte de fidélité</a>
+                            class="fa fa-id-card-o fa-2x"></i><br> Carte de fidélité</a>
                 </div>
-                <div class="text-center fw-bold">
+                <div class="col-lg-2 col-md-6 text-center fw-bold">
                     <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#"><i
-                            class="fa fa-phone fa-2x"></i> <br> Service Client</a>
+                            class="fa fa-phone fa-2x"></i><br> Service Client</a>
                 </div>
-                <div class="text-center fw-bold">
+                <div class="col-lg-2 col-md-6 mb-3 text-center fw-bold">
                     <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#"><i
-                            class="fas fa-check-circle fa-2x"></i> <br> Garantie qualité</a>
+                            class="fas fa-check-circle fa-2x"></i><br> Garantie qualité</a>
                 </div>
             </div>
         </div>
         <div class="container">
-            <div class="d-flex justify-content-between my-5 ">
-                <section class="text-center">
-                    <h3 class="fw-bold">Cup of Tea</h3>
+            <div class="row m-auto justify-content-betweeng-3 my-3">
+                <section class="col-lg-4 col-md-12 text-center">
+                    <h3 class="fw-semibold">Cup of Tea</h3>
                     <ul class="list-unstyled p-0">
                         <li>
                             <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Notre
@@ -268,8 +279,8 @@
                         </li>
                     </ul>
                 </section>
-                <section class="text-center">
-                    <h3>Commandez en ligne</h3>
+                <section class="col-lg-4 col-md-12 text-center">
+                    <h3 class="fw-semibold">Commandez en ligne</h3>
                     <ul class="p-0 list-unstyled">
                         <li>
                             <a class="link-offset-2 link-underline link-underline-opacity-0 text-white"
@@ -301,8 +312,8 @@
                         </li>
                     </ul>
                 </section>
-                <section class="mb-5 text-center">
-                    <h3>Suivez-nous!</h3>
+                <section class="col-lg-4 col-md-12 text-center">
+                    <h3 class="fw-semibold">Suivez-nous!</h3>
                     <ul class="p-0 list-unstyled">
                         <li>
                             <a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#">Notre
@@ -325,7 +336,7 @@
             </div>
         </div>
 
-        <!-- div licnese start -->
+        <!-- div license start -->
         <div class="license bg-glight py-3 text-center">
             <div class="container">
                 <p><a class="link-offset-2 link-underline link-underline-opacity-0 text-white" href="#"><img
